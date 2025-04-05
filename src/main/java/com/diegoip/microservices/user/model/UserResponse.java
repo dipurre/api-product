@@ -1,18 +1,18 @@
 package com.diegoip.microservices.user.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
-@Data
+@Getter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserResponse {
 
   @Schema(example = "312472cc-df22-41b0-bfd3-600b628b4bc4")
-  private UUID id;
+  private String id;
 
   @Schema(example = "2025-04-04T18:46:05.758444")
   private LocalDateTime created;

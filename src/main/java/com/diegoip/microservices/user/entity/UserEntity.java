@@ -17,9 +17,8 @@ import java.util.UUID;
 public class UserEntity {
 
   @Id
-  @GeneratedValue(generator = "UUID")
   @Column(name = "id", updatable = false, nullable = false)
-  private UUID id;
+  private String id;
 
   @Column(name = "name")
   private String name;

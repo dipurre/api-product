@@ -13,7 +13,6 @@ import javax.crypto.SecretKey;
 import java.util.Date;
 
 @Service
-@Slf4j
 public class JwtServiceImpl implements JwtService {
 
   private final SecretKey SECRET_KEY = Keys.hmacShaKeyFor(Decoders.BASE64.decode("confe256confe256confe256confe256confe256confe256"));

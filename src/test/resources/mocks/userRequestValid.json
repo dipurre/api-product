@@ -1,0 +1,12 @@
+{
+  "name": "Juan Rodriguez",
+  "email": "juan@rodriguez.org",
+  "password": "Asdsdbd$5656df",
+  "phones": [
+    {
+      "number": "1234567",
+      "cityCode": "1",
+      "countryCode": "57"
+    }
+  ]
+}

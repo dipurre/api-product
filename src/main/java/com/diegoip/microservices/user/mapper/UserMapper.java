@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.Optional;
+import java.util.UUID;
 
 @Component
 @RequiredArgsConstructor
@@ -24,6 +25,7 @@ public class UserMapper {
   public UserEntity toDomainObject(UserRequest userRequest) {
 
     UserEntity user = UserEntity.builder()
+        .id(UUID.randomUUID().toString())
         .name(userRequest.getName())
         .password(passwordEncoder.encode(userRequest.getPassword()))
         .email(userRequest.getEmail())
