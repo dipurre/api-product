@@ -7,10 +7,14 @@ Se requiere desarrollar una aplicación  que permita realizar las siguientes ope
 - testear la autenticacion
 
 
+## Collecion postman
+
+Para probar la aplicacion lo puedes hacer desde postman. Coleccion postman
+[coleccion](src/main/resources/postman/app-user.postman_collection.json)
+
 ## Iniciar aplicación
 
 Para iniciar la aplicación en modo local debes ejecutar el comando.
-
 ```shell
 
 ./gradlew bootRun
