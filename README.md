@@ -10,7 +10,11 @@ Se requiere desarrollar una aplicación  que permita realizar las siguientes ope
 ## Collecion postman
 
 Para probar la aplicacion lo puedes hacer desde postman. Coleccion postman
-[coleccion](src/main/resources/postman/app-user.postman_collection.json)
+[colecion](src/main/resources/postman/app-user.postman_collection.json)
+
+### Swagger UI
+
+Encontrarás la documentación y acceso a la API [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) mediante Swagger.
 
 ## Iniciar aplicación
 
@@ -35,6 +39,7 @@ El proyecto contiene pruebas unitarias las cuales puedes ejecutar de la siguient
 Este proyecto fue desarrollado por:
 
 - **Diego** - Software Engineer
+
 ### Tecnologías
 - Java 17
 - Spring 3.4.4

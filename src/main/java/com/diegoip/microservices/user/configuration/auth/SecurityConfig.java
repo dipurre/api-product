@@ -32,6 +32,8 @@ public class SecurityConfig {
   private final AuthenticationFilter authenticationFilter;
   private final AuthEntryPoint exceptionHandler;
 
+  private static final String[] SWAGGER_PATHS = {"/v3/api-docs/**", "/swagger-ui.html", "/webjars/swagger-ui/**", "/swagger-ui/**"};
+
   public SecurityConfig(UserDetailsServiceImpl userDetailsService, AuthenticationFilter authenticationFilter,
                         AuthEntryPoint exceptionHandler) {
     this.userDetailsService = userDetailsService;
@@ -46,6 +48,7 @@ public class SecurityConfig {
             (sessionManagement) -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
             .requestMatchers("/h2-console/**").permitAll()
+            .requestMatchers(SWAGGER_PATHS).permitAll()
             .requestMatchers(HttpMethod.POST, "/v1/users/login").permitAll()
             .requestMatchers(HttpMethod.POST, "/v1/users/register").permitAll()
             .anyRequest().authenticated())
