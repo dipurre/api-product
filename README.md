@@ -12,7 +12,7 @@ Se requiere desarrollar una aplicación  que permita realizar las siguientes ope
 Para probar la aplicacion lo puedes hacer desde postman. Coleccion postman
 [colecion](src/main/resources/postman/app-user.postman_collection.json)
 
-### Swagger UI
+## Swagger UI
 
 Encontrarás la documentación y acceso a la API [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) mediante Swagger.
 
@@ -33,6 +33,10 @@ El proyecto contiene pruebas unitarias las cuales puedes ejecutar de la siguient
 ./gradlew test
 
 ``` 
+
+## Diagrama
+
+![diagrama](https://raw.githubusercontent.com/dipurre/api-user/refs/heads/main/src/main/resources/diagrama/diagrama.png)
 
 ## Créditos
 
